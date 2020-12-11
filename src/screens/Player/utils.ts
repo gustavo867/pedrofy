@@ -74,9 +74,10 @@ async function getStatus(
 async function loadAudio(
   soundObject: Audio.Sound,
   setAudio: React.Dispatch<React.SetStateAction<Audio>>,
-  audio: Audio
+  audio: Audio,
+  uri: any
 ) {
-  await soundObject.loadAsync(require("../../../assets/matue.mp3"));
+  await soundObject.loadAsync(uri);
   setAudio({
     isPlaying: true,
     currentIndex: audio.currentIndex,

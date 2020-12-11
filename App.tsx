@@ -1,12 +1,13 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import Player from "./src/screens/Player";
+
+import Routes from "./src/routes/routes";
 
 export default function App() {
   return (
     <>
-      <StatusBar style="auto" />
-      <Player />
+      <StatusBar style="auto" translucent />
+      <Routes />
     </>
   );
 }
